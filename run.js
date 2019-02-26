@@ -208,8 +208,8 @@ function start () {
 	app.run({
 		'callback': f,
 		'context': this,
-		'host': getURLParameter('host') || '10.11.12.100',
-		'port': getURLParameter('port') || 8000,
+		'host': getURLParameter('host') || '192.168.178.51',
+		'port': getURLParameter('port') || 12345,
 		'protocol': getURLParameter('protocol') || 'ws',
 		'token': '1q2w3e4r',
 		'vmHost': getURLParameter('vmhost') || false,
@@ -233,7 +233,7 @@ function start () {
 		'useWorkers': useWorkers,
 		'seamlessDesktopIntegration': false,
 		'externalClipboardHandling': false,
-		'disableClipboard': true,
+		'disableClipboard': false,
 		'layer': document.getElementById('testVdi'),
 		'vmInfoToken': getURLParameter('vmInfoToken')
 		//'language': navigator.language
